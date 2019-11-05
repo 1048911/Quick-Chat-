@@ -4,7 +4,6 @@
 //
 //  This is the view controller where users login
 
-
 import UIKit
 import Firebase
 import SVProgressHUD
@@ -28,7 +27,7 @@ class LogInViewController: UIViewController {
     @IBAction func logInPressed(_ sender: AnyObject) {
 
         
-        //TODO: Log in the user
+        //TODO: Create UIALerts to show the error messages to the user
         
         SVProgressHUD.show()
         

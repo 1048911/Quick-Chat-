@@ -33,13 +33,15 @@ class RegisterViewController: UIViewController {
         
 
         
-        //TODO: Set up a new user on our Firbase database
+        //TODO: Create UIALerts to show the error messages to the user
         
         
         SVProgressHUD.show()
         Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
             if error != nil {
                 print(error!)
+                SVProgressHUD.dismiss()
+               
             }else {
                 print("Registration successful!")
                   SVProgressHUD.dismiss()

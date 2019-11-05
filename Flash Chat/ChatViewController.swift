@@ -2,9 +2,8 @@
 //  ViewController.swift
 //  Flash Chat
 //
-//  Created by Angela Yu on 29/08/2015.
-//  Copyright (c) 2015 London App Brewery. All rights reserved.
-//
+
+
 
 import UIKit
 import Firebase
@@ -26,17 +25,16 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //TODO: Set yourself as the delegate and datasource here:
+        //MARK: Set yourself as the delegate and datasource here:
         
         messageTableView.delegate = self
         messageTableView.dataSource = self
         messageTextfield.delegate = self
-        
-        //TODO: Set yourself as the delegate of the text field here:
+       
 
         
         
-        //TODO: Set the tapGesture here:
+        //MARK: Set the tapGesture here:
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tableViewTapped))
         messageTableView.addGestureRecognizer(tapGesture)
@@ -57,7 +55,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     
-    //TODO: Declare cellForRowAtIndexPath here:
+    //MARK: Declare cellForRowAtIndexPath here:
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -121,7 +119,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-    //TODO: Declare textFieldDidEndEditing here:
+    //MARK: Declare textFieldDidEndEditing here:
     
     func textFieldDidEndEditing(_ textField: UITextField) {
      
@@ -149,7 +147,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         messageTextfield.isEnabled
          = false
         
-        //TODO: Send the message to Firebase and save it in our database
+        //MARK: Send the message to Firebase and save it in our database
         
         let messagesDB = Database.database().reference().child("Messages")
         let messageDictionary = ["Sender": Auth.auth().currentUser?.email, "MessageBody": messageTextfield.text!]
@@ -196,7 +194,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func logOutPressed(_ sender: AnyObject) {
         
-        //TODO: Log out the user and send them back to WelcomeViewController
+        //MARK: Log out the user and send them back to WelcomeViewController
         do{
             try Auth.auth().signOut()
             navigationController?.popToRootViewController(animated: true)

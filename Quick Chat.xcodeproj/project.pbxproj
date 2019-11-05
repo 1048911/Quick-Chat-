@@ -18,7 +18,6 @@
 		63E28B311B9A337600FBF6E0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2C1B9A337600FBF6E0 /* LogInViewController.swift */; };
 		63E28B321B9A337600FBF6E0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */; };
 		63E28B331B9A337600FBF6E0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */; };
-		63EBB3051D98004B004175E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */; };
 		8D1E49DA2231A44600D5928A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1E49D92231A44600D5928A /* GoogleService-Info.plist */; };
 		8D87183122EF8DBC00C03568 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D87183022EF8DBC00C03568 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 		63E28B2C1B9A337600FBF6E0 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63FB396FF8382CCDE231BD28 /* Pods_Flash_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1E49D92231A44600D5928A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D87183022EF8DBC00C03568 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -68,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				8D87183022EF8DBC00C03568 /* Default-568h@2x.png */,
-				6321A9B81B94EBA10053D2E7 /* Quick Chat */,
+				6321A9B81B94EBA10053D2E7 /* Flash Chat */,
 				6321A9B71B94EBA10053D2E7 /* Products */,
 				91970B0C7C30119976B6F92F /* Pods */,
 				327114A281054AD7AA9F306D /* Frameworks */,
@@ -83,7 +81,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6321A9B81B94EBA10053D2E7 /* Quick Chat */ = {
+		6321A9B81B94EBA10053D2E7 /* Flash Chat */ = {
 			isa = PBXGroup;
 			children = (
 				6321A9EE1B94EC360053D2E7 /* Model */,
@@ -92,7 +90,7 @@
 				6321A9C21B94EBA10053D2E7 /* Images.xcassets */,
 				6321A9B91B94EBA10053D2E7 /* Supporting Files */,
 			);
-			path = "Quick Chat";
+			path = "Flash Chat";
 			sourceTree = "<group>";
 		};
 		6321A9B91B94EBA10053D2E7 /* Supporting Files */ = {
@@ -128,7 +126,6 @@
 		6321A9EB1B94EC170053D2E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */,
 				63E28B281B9A336600FBF6E0 /* Main.storyboard */,
 				6321A9E91B94EBEE0053D2E7 /* Custom Cell */,
 			);
@@ -219,7 +216,6 @@
 				63E28B291B9A336600FBF6E0 /* Main.storyboard in Resources */,
 				6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */,
 				8D1E49DA2231A44600D5928A /* GoogleService-Info.plist in Resources */,
-				63EBB3051D98004B004175E5 /* LaunchScreen.storyboard in Resources */,
 				6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */,
 				8D87183122EF8DBC00C03568 /* Default-568h@2x.png in Resources */,
 			);
