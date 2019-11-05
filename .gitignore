@@ -11,7 +11,8 @@
 build/
 DerivedData/
 
-flowerclassification.mlmodelAppDelegate.swift
+flowerclassification.mlmodel
+AppDelegate.swift
 GoogleService-Info.plist
 
 ## Various settings

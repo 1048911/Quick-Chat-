@@ -1,24 +1,6 @@
-# Flash-Chat
-Learn to make iOS Apps with [The App Brewery](https://www.appbrewery.co) 📱 | Project Stub | (Swift 4.0/Xcode 9) - Flash Chat App
-
-Beginner: Download the starter project files as .zip and extract the files to your desktop.
-
-Pro: Git clone to your Xcode projects folder.
-
-## Podfile Configuration
-```
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        target.build_configurations.each do |config|
-            config.build_settings['CLANG_WARN_DOCUMENTATION_COMMENTS'] = 'NO'
-        end
-    end
-end
-```
-
-## Finished App
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/Flash%20Chat.gif)
+# Quick-Chat
 
 
+An app that allows users to register, log in, and participate in a chat in real-time.
 
-Copyright © The App Brewery
+This app has multiple views and conforms to MVC. The view was designed using Autolayout and UIKit. I used Cocoapods to install Firebase and SVProgressHUD. Firebase is used to let users register an account and sign into an account. Firebase is also used to save messages to an online database. TableViews are used to display messages between senders.
